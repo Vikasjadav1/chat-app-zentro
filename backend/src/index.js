@@ -5,6 +5,10 @@ import cors from "cors";
 
 import path from "path";
 
+import dns from 'dns';
+dns.setDefaultResultOrder('ipv4first');
+
+
 import { connectDB } from "./lib/db.js";
 
 import authRoutes from "./routes/auth.route.js";
